@@ -1,0 +1,37 @@
+trigger:
+- develop # Cambia 'main' por la rama que deseas desplegar
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  azureSubscription: 'JoeServiceConect'
+  webAppName: 'joe'
+  resourceGroupName: 'RG-NICO-AVATAR-STREAMING'
+
+steps:
+# Paso 1: Restaurar paquetes NuGet
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '8.x' # Cambia según la versión de .NET que uses
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '**/*.sln'
+
+# Paso 2: Compilar la solución
+- task: VSBuild@1
+  inputs:
+    solution: '**/*.sln'
+    msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DeployIisAppPath="Default Web Site"'
+
+# Paso 3: Publicar en Azure Web App
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: '$(azureSubscription)'
+    appType: 'webApp'
+    WebAppName: '$(webAppName)'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip' # Ajusta el nombre del paquete si es necesario

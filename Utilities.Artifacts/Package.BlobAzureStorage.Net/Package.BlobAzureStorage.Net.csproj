@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Package.BlobAzureStorage.Net</AssemblyName>
+    <RootNamespace>Package.BlobAzureStorage.Net</RootNamespace>
+    <Configurations>Debug;Release</Configurations>
+	<Authors>company-developer</Authors>
+    <Description>Libreria para integrarse con rediscache</Description>
+    <Company>YourCompany</Company>
+    <ProjectGuid>{76656EFF-74AF-4147-95AD-402B830D92A0}</ProjectGuid>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Package.Utilities.Net\Package.Utilities.Net.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>Package.ProcessEngineApplication.Net</AssemblyName>
+    <RootNamespace>Package.ProcessEngineApplication.Net</RootNamespace>
+    <Configurations>Debug;Release</Configurations>
+	<Authors>company-developer</Authors>
+    <Description>Libreria para integrarse con los componentes transversarles de company-developer</Description>
+    <Company>YourCompany</Company>
+    <ProjectGuid>{17DBE5C7-DE30-4CD9-AB61-672C4354B1B6}</ProjectGuid>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.22.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.11.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Package.Utilities.Net\Package.Utilities.Net.csproj" />
+  </ItemGroup>
+
+</Project>

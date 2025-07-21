@@ -1,0 +1,119 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Application</RootNamespace>
+    <AssemblyName>Application</AssemblyName>
+    <LangVersion>10.0</LangVersion>
+	<Nullable>disable</Nullable>
+	<Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Models\DataFiltered\**" />
+    <Compile Remove="Common\Models\FilterCommons\**" />
+    <Compile Remove="Common\Models\Filters\**" />
+    <Compile Remove="Common\Models\Pagination\**" />
+    <Compile Remove="Common\Options\**" />
+    <Compile Remove="Common\Security\**" />
+    <Compile Remove="Common\Specs\**" />
+    <Compile Remove="Common\Utils\**" />
+    <Compile Remove="Empresas\**" />
+    <Compile Remove="Moneda\**" />
+    <Compile Remove="Notificacions\**" />
+    <EmbeddedResource Remove="Common\Models\DataFiltered\**" />
+    <EmbeddedResource Remove="Common\Models\FilterCommons\**" />
+    <EmbeddedResource Remove="Common\Models\Filters\**" />
+    <EmbeddedResource Remove="Common\Models\Pagination\**" />
+    <EmbeddedResource Remove="Common\Options\**" />
+    <EmbeddedResource Remove="Common\Security\**" />
+    <EmbeddedResource Remove="Common\Specs\**" />
+    <EmbeddedResource Remove="Common\Utils\**" />
+    <EmbeddedResource Remove="Empresas\**" />
+    <EmbeddedResource Remove="Moneda\**" />
+    <EmbeddedResource Remove="Notificacions\**" />
+    <None Remove="Common\Models\DataFiltered\**" />
+    <None Remove="Common\Models\FilterCommons\**" />
+    <None Remove="Common\Models\Filters\**" />
+    <None Remove="Common\Models\Pagination\**" />
+    <None Remove="Common\Options\**" />
+    <None Remove="Common\Security\**" />
+    <None Remove="Common\Specs\**" />
+    <None Remove="Common\Utils\**" />
+    <None Remove="Empresas\**" />
+    <None Remove="Moneda\**" />
+    <None Remove="Notificacions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\Interfaces\" />
+    <Folder Include="Common\Models\" />
+    <Folder Include="Common\Services\" />
+    <Folder Include="Common\Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.10" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.10.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.34" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="QuestPDF" Version="2025.1.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Utilities.Artifacts\Package.EventSourcingCore.Net\Package.EventSourcingCore.Net.csproj" />
+    <ProjectReference Include="..\Utilities.Artifacts\Package.Nico.Assistant\Nico.Assistant.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Rutas\" />
+    <None Remove="Rutas\Commands\" />
+    <None Remove="Rutas\Queries\" />
+    <None Remove="PrimeNG.TableFilter" />
+    <None Remove="Estructuras\" />
+    <None Remove="Estructuras\Queries\" />
+    <None Remove="Routes %28copia%29\" />
+    <None Remove="Restricciones %28copia%29\" />
+    <None Remove="Estructuras %28copia%29\" />
+    <None Remove="Dimensions %28copia%29\" />
+    <None Remove="ViasPrincipales\Queries\GetViasWithPaginationQry.cs" />
+    <None Remove="Common\Validators\" />
+    <None Remove="Empresa\" />
+    <None Remove="Empresa\Command\" />
+    <None Remove="Empresa\Query\" />
+    <None Remove="Empresa\Models\" />
+    <None Remove="Package.Utilities.Net" />
+    <None Remove="Empresas %28copy%29\" />
+    <None Remove="Moneda\" />
+    <None Remove="System.Linq.Dynamic.Core" />
+    <None Remove="Common\Models\Filters\" />
+    <None Remove="Common\Models\Pagination\" />
+    <None Remove="FronteraCuentaContable\" />
+    <None Remove="UnidadNegocio\" />
+    <None Remove="UnidadNegocio\Commands\" />
+    <None Remove="UnidadNegocio\Models\" />
+    <None Remove="UnidadNegocio\Queries\" />
+    <None Remove="Common\Models\DataFiltered\" />
+    <None Remove="Escalas %28copy%29\" />
+    <None Remove="BaseRules\" />
+    <None Remove="Compania\" />
+    <None Remove="Compania\Commands\" />
+    <None Remove="Compania\Queries\" />
+    <None Remove="Compania\Models\" />
+    <None Remove="Companias %28copy%29\" />
+    <None Remove="UnidadesNegocio %28copy%29\" />
+    <None Remove="LogCargaDeDatos %28copy%29\" />
+    <None Remove="Common\Models\FilterCommons\" />
+    <None Remove="Common\Digitools\" />
+    <None Remove="EjerciciosPresupuestales\" />
+    <None Remove="Samples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ViasPrincipales\Queries\GetDimensionsWithPaginationQry.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,97 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Api</RootNamespace>
+    <AssemblyName>Api</AssemblyName>
+    <LangVersion>10.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+   <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>255925af-045e-4e83-80b5-52acf9d06f78</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Authorization\**" />
+    <Compile Remove="Controllers\Samples\**" />
+    <Content Remove="Common\Authorization\**" />
+    <Content Remove="Controllers\Samples\**" />
+    <EmbeddedResource Remove="Common\Authorization\**" />
+    <EmbeddedResource Remove="Controllers\Samples\**" />
+    <None Remove="Common\Authorization\**" />
+    <None Remove="Controllers\Samples\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\v1\" />
+    <Folder Include="Controllers\Bases\" />
+    <Folder Include="Controllers\v1\Extended\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="EPPlus.Core.Extensions" Version="2.4.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10" />
+	<PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.3.2" />
+    <PackageReference Include="Unity.Microsoft.DependencyInjection" Version="5.11.5" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="TextResponseApplication\Texts\Application.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TextMessageApplication\Texts\Parametros.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Parametros.resx</DependentUpon>
+    </Compile>
+    <Compile Update="TextMessageApplication\Texts\Transversal.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Transversal.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="TextResponseApplication\Texts\Application.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TextMessageApplication\Texts\Parametros.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Parametros.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TextMessageApplication\Texts\Transversal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Transversal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+	  <Authors>company-developer</Authors>
+    <Description>Libreria para consumir servicios de Event Sourcing</Description>
+    <Company>YourCompany</Company>
+    <AssemblyName>Package.EventSourcingServiceBus.Net</AssemblyName>
+    <RootNamespace>Package.EventSourcingServiceBus.Net</RootNamespace>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.2.1" />
+    <PackageReference Include="Microsoft.Azure.ServiceBus" Version="5.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Package.EventSourcingCore.Net\Package.EventSourcingCore.Net.csproj" />
+  </ItemGroup>
+
+</Project>

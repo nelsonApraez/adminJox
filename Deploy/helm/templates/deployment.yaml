@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:  
+  name: app-{{ .Values.fullname }}  
+  labels:
+    app: app-{{ .Values.fullname }}
+    tag: {{ .Values.selectorLabels}}
+    aadpodidbinding: {{ .Values.nameAzureIdentity }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: app-{{ .Values.fullname }}      
+  template:
+    metadata:
+      labels:
+        app: app-{{ .Values.fullname }}
+        tag: {{ .Values.selectorLabels}}
+        aadpodidbinding: {{ .Values.nameAzureIdentity }}
+    spec:      
+      containers:
+      - name: app-{{ .Values.fullname }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"        
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        env: 
+          {{- toYaml .Values.env | nindent 8 }}      
+        ports:
+        - name: http
+          containerPort: 80
+          protocol: TCP
+        resources:
+          {{- toYaml .Values.resources | nindent 10 }}
+      imagePullSecrets:
+      - name: {{ .Values.imagePullSecrets }}
+  strategy:
+    {{- toYaml .Values.strategy | nindent 4 }}

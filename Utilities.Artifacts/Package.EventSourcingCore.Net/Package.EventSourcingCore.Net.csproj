@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <RootNamespace>EventSourcingCore</RootNamespace>
+    <Authors>company-developer</Authors>
+    <Description>Libreria para consumir servicios de Event Sourcing</Description>
+    <Company>YourCompany</Company>
+		<AssemblyName>Package.EventSourcingCore.Net</AssemblyName>
+		<RootNamespace>Package.EventSourcingCore.Net</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>

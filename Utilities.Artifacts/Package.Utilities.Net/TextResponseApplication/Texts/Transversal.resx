@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrForeingkey" xml:space="preserve">
+    <value>No se puede eliminar el registro porque tiene asociación con otros maestros.</value>
+  </data>
+  <data name="ErrMaxLength" xml:space="preserve">
+    <value>Existen datos demasiado extensos, por favor corrija el problema y vuelva a intentarlo.</value>
+  </data>
+  <data name="ErrMaxValue" xml:space="preserve">
+    <value>Algunos datos que han sido ingresados infringen restricciones de la base de datos, por favor corrija el problema y vuelva a intentarlo.</value>
+  </data>
+  <data name="ErrNoColumnExport" xml:space="preserve">
+    <value>No hay columnas configuradas para generar el archivo de excel con la información.</value>
+  </data>
+  <data name="ErrNoDataExport" xml:space="preserve">
+    <value>No hay datos para generar el archivo de excel con la información.</value>
+  </data>
+  <data name="ErrNoEncontrado" xml:space="preserve">
+    <value>El registro que intenta buscar no se encuentra.</value>
+  </data>
+  <data name="Error.Empresa.Autorizacion" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00009",
+ "Title":"¡Intento de vulneración a la seguridad!",
+ "Message":"¡No estás autorizado para ejecutar la acción indicada. Serás direccionado de forma inmediata al inicio de sesión!",
+ "MessageFormat":"¡No estás autorizado para ejecutar la acción indicada. Serás direccionado de forma inmediata al inicio de sesión!",
+ "Parameters":[],
+ "TypeMessage":"Error",
+ "TitleTag":"Autorizacion" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00009</comment>
+  </data>
+  <data name="Warning.Empresa.DatoRequerido" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00003",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Dato requerido no diligenciado!",
+ "Message":"¡Debes registrar un valor para el dato \"{2}\", el cual es obligatorio!", 
+ "MessageFormat":"¡Debes registrar un valor para el dato \"{2}\", el cual es obligatorio!",
+ "Parameters":["la","Empresa"],
+ "TypeMessage":"Error",
+ "TitleTag":"Requerido" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00003</comment>
+  </data>
+  <data name="Warning.Empresa.Duplicado" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_EXI_00002",
+ "Title":"¡Empresa ya existente!",
+ "Message":"¡La empresa \"{0}\" no pudo ser registrada, debido a que ya existe. Puede mofificarla si así lo desea!",
+ "MessageFormat":"¡La empresa \"{0}\" no pudo ser registrada, debido a que ya existe. Puede mofificarla si así lo desea!",
+ "Parameters":["$Nombre"], 
+ "TypeMessage":"Error",
+ "TitleTag":"Duplicado"  
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00002</comment>
+  </data>
+  <data name="Warning.Empresa.Formato" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00004",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Formato dato no válido!",
+ "Message":"¡Debes registrar un valor con formato válido para el dato \"{2}\". El formato válido es \"{3}\"!",
+ "MessageFormat":"¡Debes registrar un valor con formato válido para el dato \"{2}\". El formato válido es \"{3}\"!",
+ "Parameters":["la","Empresa","$NombreDato","$Formato"],
+ "TypeMessage":"Error",
+ "TitleTag":"Formato"
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00004</comment>
+  </data>
+  <data name="Warning.Empresa.Longitud" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00005",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Longitud dato no válida!",
+ "Message":"¡Debes asegurarte que la longitud del dato \"{2}\" sea válida. La longitud válida es \"{3}\"!",
+ "MessageFormat":"¡Debes asegurarte que la longitud del dato \"{2}\" sea válida. La longitud válida es \"{3}\"!",
+ "Parameters":["la","Empresa"], 
+ "TypeMessage":"Error",
+ "TitleTag":"Longitud" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00005</comment>
+  </data>
+  <data name="Error.Empresa.MsjCreacion" xml:space="preserve">
+    <value>{
+ "Message":"¡La empresa \"{0}\" no pudo ser registrada, debido a que ya existe. Puede mofificarla si así lo desea!",
+ "Parameters":["Nombre"],
+ "MessageFormat":"¡La empresa \"{0}\" no pudo ser registrada, debido a que ya existe. Puede mofificarla si así lo desea!"
+}</value>
+  </data>
+  <data name="Error.Empresa.Rango" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00006",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Rango dato no válido!",
+ "Message":"¡Debes asegurarte que el rango del dato \"{2}\" sea válido. El rango válido es \"{3}\" !",
+ "MessageFormat":"¡Debes asegurarte que el rango del dato \"{2}\" sea válido. El rango válido es \"{3}\" !",
+ "Parameters":["la","Empresa","$NombreDato","$rango"],
+ "TypeMessage":"Error",
+ "TitleTag":"Rango"
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00006</comment>
+  </data>
+  <data name="Warning.Empresa.RangoFechasDesde" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00007",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Fechas no válidas!",
+ "Message":"¡Debes asegurarte que la fecha desde, sea menor o igual a la fecha hasta!",
+ "MessageFormat":"¡Debes asegurarte que la fecha desde, sea menor o igual a la fecha hasta!",
+ "Parameters":["la","Empresa"],
+ "TypeMessage":"Error",
+ "TitleTag":"Rango"
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00007</comment>
+  </data>
+  <data name="Warning.Empresa.RangoFechaHasta" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00012",
+ "Title":"¡Problemas llevando a cabo la operación sobre \"{0}\" \"{1}\": Fechas no válidas!",
+ "Message":"¡Debes asegurarte que la fecha hasta, sea mayor o igual a la fecha desde!",
+ "MessageFormat":"¡Debes asegurarte que la fecha hasta, sea mayor o igual a la fecha desde!",
+ "Parameters":["la","Empresa"],
+ "TypeMessage":"Error",
+ "TitleTag":"Rango" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00012</comment>
+  </data>
+  <data name="ErrorAuthorization" xml:space="preserve">
+    <value>La validación de la {0} para la operación {1} y la {2} no estan implementadas</value>
+  </data>
+  <data name="ErrorGeneral" xml:space="preserve">
+    <value>Ha ocurrido un error general en la aplicación. ID Trace: {0}</value>
+  </data>
+  <data name="ErrorGeneralDB" xml:space="preserve">
+    <value>Ha ocurrido un error en la base de datos. ID Trace: {0}</value>
+  </data>
+  <data name="ErrorStorageConnectionAzureStorage" xml:space="preserve">
+    <value>No se ha especificado la cadena de conexión para acceder al blob storage para almacenar los Logs del sistema</value>
+  </data>
+  <data name="ErrorTableNameAzureStorage" xml:space="preserve">
+    <value>No se ha especificado la tabla para almacenar en el PartitionKey de los Logs del sistema</value>
+  </data>
+  <data name="ErrRegistrosDependientes" xml:space="preserve">
+    <value>El registro no se puede eliminar porque tiene {0} registro(s) dependiente(s).</value>
+  </data>
+  <data name="ErrRequiredField" xml:space="preserve">
+    <value>Algunos datos no han sido ingresados y son necesarios para completar la operación, por favor corrija el problema y vuelva a intentarlo.</value>
+  </data>
+  <data name="ErrUniqueKey" xml:space="preserve">
+    <value>Esta intentando grabar valores duplicados en campos de valores únicos, por favor corrija el problema y vuelva a intentarlo.</value>
+  </data>
+  <data name="ExistField" xml:space="preserve">
+    <value>Algunos datos que han sido ingresados  ya se encuentran registrados, por favor corrija el problema y vuelva a intentarlo.</value>
+  </data>
+  <data name="Success.Empresa.MsjCreacion" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_EXI_00001",
+ "Title":"¡Empresa registrada de forma exitosa!",
+ "Message":"¡La empresa \"{0}\" ha sido registrada de forma exitosa!",
+ "MessageFormat":"¡La empresa \"{0}\" ha sido registrada de forma exitosa!",
+ "Parameters":["$Nombre"],
+ "TypeMessage":"Exito",
+ "TitleTag":"Registro" 
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00001</comment>
+  </data>
+  <data name="KeyVaultArgumentosNulos" xml:space="preserve">
+    <value>Lo valores para consultar el key vault estan vacios.</value>
+  </data>
+  <data name="KeyVaultFallaGuardar" xml:space="preserve">
+    <value>Ocurrio un error al intertar almacenar el valor en el KeyVault</value>
+  </data>
+  <data name="KeyVaultSolicitudFallida" xml:space="preserve">
+    <value>No fue posible conectarse con el KeyVault</value>
+  </data>
+  <data name="Modificar.EjercicioPresupuestal.Error" xml:space="preserve">
+    <value>{
+ "mensaje":"¡No está permitido modificar la información del dato \"{0}\" de un ejercicio presupuestal!",
+ "parametros":["Nombre"],	
+ "mesajeConFormato":"¡No está permitido modificar la información del dato \"{0}\" de un ejercicio presupuestal!",
+ "titulo":"¡Problemas modificando la información del ejercicio presupuestal!"
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00019</comment>
+  </data>
+  <data name="Modificar.Empresa.Estado.Confirmacion" xml:space="preserve">
+    <value>{
+ "mensaje":"¡La empresa \"{0}\" ha sido inactivada de forma exitosa!",
+ "parametros":["Nombre"],	
+ "mesajeConFormato":"¡La empresa \"{0}\" ha sido inactivada de forma exitosa!",
+ "titulo":"¡Empresa inactivada de forma exitosa!"
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00015</comment>
+  </data>
+  <data name="Modificar.Empresa.Estado.Error" xml:space="preserve">
+    <value>{
+ "mensaje":"¡La empresa para la cual intentas cambiar el estado no existe!",
+ "parametros":["Nombre"],	
+ "mesajeConFormato":"¡La empresa para la cual intentas cambiar el estado no existe!",
+ "titulo":"¡Problemas cambiando el estado de la empresa seleccionada!"
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00014</comment>
+  </data>
+  <data name="Alert.Empresa.Confirmacion" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_CON_00020",
+ "Title":"¡Confirmación de modificación de información!",
+ "Message":"¿Está seguro de llevar a cabo la modificación de la información registrada?", 
+ "MessageFormat":"¿Está seguro de llevar a cabo la modificación de la información registrada?",
+ "Parameters":[],
+ "TypeMessage":"Alert",
+ "TitleTag":"Confirmación" 
+}</value>
+    <comment>SEGURIDAD_USU_CON_00020</comment>
+  </data>
+  <data name="Modificar.Modelo.Confirmacion" xml:space="preserve">
+    <value>{
+ "mensaje":"¡El modelo \"{0}\" ha sido modificado de forma exitosa!",
+ "parametros":["Nombre"],	
+ "mesajeConFormato":"¡El modelo \"{0}\" ha sido modificado de forma exitosa!",
+ "titulo":"¡Modelo modificado de forma exitosa!"
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00016</comment>
+  </data>
+  <data name="Modificar.Modelo.Error" xml:space="preserve">
+    <value>{
+ "mensaje":"¡La información relacionada al modelo \"{0}\" no se ha modificado debido a que esa información ya existe!",
+ "parametros":["Nombre"],	
+ "mesajeConFormato":"¡La información relacionada al modelo \"{0}\" no se ha modificado debido a que esa información ya existe!",
+ "titulo":"¡La información que desea registrar ya existe!"
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00018</comment>
+  </data>
+  <data name="MsjActualizacionMessage" xml:space="preserve">
+    <value>El registro fue modificado exitosamente.</value>
+  </data>
+  <data name="MsjActualizacionMessageNegative" xml:space="preserve">
+    <value>Ocurrio un error al intentar modificar el registro.</value>
+  </data>
+  <data name="MsjActualizacionTitle" xml:space="preserve">
+    <value>Modificación de Registro</value>
+  </data>
+  <data name="MsjCreacionMessage" xml:space="preserve">
+    <value>El registro fue creado exitosamente.</value>
+  </data>
+  <data name="MsjCreacionMessageNegative" xml:space="preserve">
+    <value>Ocurrio un error al intentar crear el registro.</value>
+  </data>
+  <data name="MsjCreacionTitle" xml:space="preserve">
+    <value>Creación de Registro</value>
+  </data>
+  <data name="MsjEliminacionMessage" xml:space="preserve">
+    <value>El registro fue eliminado exitosamente.</value>
+  </data>
+  <data name="MsjEliminacionMessageNegative" xml:space="preserve">
+    <value>Ocurrio un error al intentar eliminar el registro.</value>
+  </data>
+  <data name="MsjEliminacionTitle" xml:space="preserve">
+    <value>Eliminacion de Registro</value>
+  </data>
+  <data name="ObjectEmpty" xml:space="preserve">
+    <value>El objeto se encuentra vacio, por lo anterior no se puede procesar la información.</value>
+  </data>
+  <data name="Success.Empresa.MsjActualizacion" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_EXI_00010",
+ "Title":"¡Empresa modificada de forma exitosa!",
+ "Message":"¡La empresa \"{0}\" ha sido modificada de forma exitosa!",
+ "MessageFormat":"¡La empresa \"{0}\" ha sido modificada de forma exitosa!",
+ "Parameters":["$Nombre"],
+ "TypeMessage":"Exito",
+ "TitleTag":"Registro" 
+}</value>
+    <comment>SEGURIDAD_USU_EXI_00010</comment>
+  </data>
+  <data name="Unauthorized" xml:space="preserve">
+    <value>El usuario {1} con cuenta de dominio {0}, no esta autorizado para ejecutar la acción solicitada.</value>
+  </data>
+  <data name="Error.Empresa.ModificarCancelar" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_INF_00043",
+ "Title":"¡Modificación de información de la empresa cancelada!",
+ "Message":"¡Se ha cancelado la acción de modificar información para la empresa \"{0}\" , dado que no se ha encontrado ninguna diferencia con la información ya existente!", 
+ "MessageFormat":"¡Se ha cancelado la acción de modificar información para la empresa \"{0}\" , dado que no se ha encontrado ninguna diferencia con la información ya existente!",
+ "Parameters":["$Nombre"],
+ "TypeMessage":"Error",
+ "TitleTag":"cancelada" 
+}</value>
+    <comment>SEGURIDAD_USU_INF_00043</comment>
+  </data>
+  <data name="Error.Empresa.ModificarExistente" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00029",
+ "Title":"¡Empresa no existente!",
+ "Message":"¡La Empresa \"{0}\" que intentó modificar no existe!", 
+ "MessageFormat":"¡La Empresa \"{0}\" que intentó modificar no existe!",
+ "Parameters":["$Nombre"],
+ "TypeMessage":"Error",
+ "TitleTag":"existente" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00029</comment>
+  </data>
+  <data name="Warning.Empresa.MsjActualizacion" xml:space="preserve">
+    <value>{
+ "Code":"SEGURIDAD_USU_ERR_00029",
+ "Title":"¡Empresa no existente!",
+ "Message":"¡La Empresa \"{0}\" que intentó modificar no existe!",
+ "MessageFormat":"¡La Empresa \"{0}\" que intentó modificar no existe!",
+ "Parameters":["$Nombre"],
+ "TypeMessage":"Warning",
+ "TitleTag":"Registro" 
+}</value>
+    <comment>SEGURIDAD_USU_ERR_00029</comment>
+  </data>
+  <data name="RegistroAntiguoVacio" xml:space="preserve">
+    <value>Registro antiguo vacío</value>
+  </data>
+  <data name="RegistroNuevoAntiguoVacio" xml:space="preserve">
+    <value>Registro nuevo y antiguo vacío</value>
+  </data>
+  <data name="RegistroNuevoVacio" xml:space="preserve">
+    <value>Registro nuevo vacío</value>
+  </data>
+  <data name="MessageGeneral" xml:space="preserve">
+    <value>Evento general en la aplicación. ID Trace: {0}</value>
+  </data>
+</root>

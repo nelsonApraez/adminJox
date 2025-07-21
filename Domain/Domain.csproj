@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+   <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Domain</RootNamespace>
+    <AssemblyName>Domain</AssemblyName>
+  </PropertyGroup>
+
+   <ItemGroup>
+     <Compile Remove="DomainService\**" />
+     <EmbeddedResource Remove="DomainService\**" />
+     <None Remove="DomainService\**" />
+   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="3.1.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageReference Include="MongoDB.Bson" Version="3.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.6" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities.Artifacts\Package.Utilities.Net\Package.Utilities.Net.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="AggregateModels\Conversation\Specs\" />
+    <Folder Include="Ports\Queries\" />
+    <Folder Include="Ports\Repositories\Interfaces\" />
+  </ItemGroup>
+</Project>

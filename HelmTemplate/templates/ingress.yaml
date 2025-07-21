@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ .Values.ingress.name }}
+  labels:
+    app: in-{{ .Values.fullname }}
+    tag: {{ .Values.selectorLabels }}
+  annotations:
+    {{- toYaml .Values.ingress.annotations | nindent 4 }}
+spec:
+  tls:
+    {{- toYaml .Values.ingress.tls | nindent 4 }}
+  rules:
+  - host: {{ .Values.ingress.hostname }}
+    http:    
+      {{- toYaml .Values.ingress.frontera | nindent 6 }}

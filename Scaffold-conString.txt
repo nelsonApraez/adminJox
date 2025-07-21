@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=your-server.database.windows.net;Initial Catalog=YourDatabase;Persist Security Info=True;User ID=your-username;Password=your-password" Microsoft.EntityFrameworkCore.SqlServer -Context "MainContext" -OutputDir Entities -DataAnnotations -NoOnConfiguring -NoPluralize -force -StartupProject "YourApi.Project"
