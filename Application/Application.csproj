@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -68,7 +68,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Utilities.Artifacts\Package.EventSourcingCore.Net\Package.EventSourcingCore.Net.csproj" />
-    <ProjectReference Include="..\Utilities.Artifacts\Package.Nico.Assistant\Nico.Assistant.csproj" />
+    <ProjectReference Include="..\Utilities.Artifacts\Package.JOX.Assistant\JOX.Assistant.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Rutas\" />

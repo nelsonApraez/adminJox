@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nico.Assistant.Interface;
-using Nico.Assistant.Models;
+using JOX.Assistant.Interface;
+using JOX.Assistant.Models;
 
 namespace Application.Services
 {
     public class ProcessOperation : IProcessOperation
     {
-        public Task<ResponseNico> ExecuteOperation(ActionAgentModel process)
+        public Task<ResponseJOX> ExecuteOperation(ActionAgentModel process)
         {
             throw new NotImplementedException();
         }

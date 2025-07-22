@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using Nico.Assistant.Socket;
+using JOX.Assistant.Socket;
 using System.Net;
 
 
@@ -13,9 +13,9 @@ namespace DemoIA.Rag.Bot.Controllers
     [ApiController]
     public class NotifyServicesController : ControllerBase
     {
-        private readonly IHubContext<ChatHubNico, IHubClient> _chatHubBase;
+        private readonly IHubContext<ChatHubJOX, IHubClient> _chatHubBase;
 
-        public NotifyServicesController(IHubContext<ChatHubNico, IHubClient> chatHubBase)
+        public NotifyServicesController(IHubContext<ChatHubJOX, IHubClient> chatHubBase)
         {
             _chatHubBase = chatHubBase;
         }

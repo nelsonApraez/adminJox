@@ -1,8 +1,8 @@
-Ôªø{
+{
   "version": "1",
   "environments": [
-    // Consulte https://aka.ms/remotetesting para obtener m√°s informaci√≥n
-    // sobre c√≥mo configurar entornos remotos.
+    // Consulte https://aka.ms/remotetesting para obtener m·s informaciÛn
+    // sobre cÛmo configurar entornos remotos.
     //{
     //  "name": "WSL Ubuntu",
     //  "type": "wsl",

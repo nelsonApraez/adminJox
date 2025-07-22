@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Builder;
-using Nico.Assistant.Socket;
+using JOX.Assistant.Socket;
 
 var builder = WebApplication.CreateBuilder(args);
 var startup = new Api.Startup(builder.Configuration);

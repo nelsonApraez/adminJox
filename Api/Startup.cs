@@ -4,9 +4,9 @@ using Application.Services;
 using Infrastructure;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.OpenApi.Models;
-using Nico.Assistant;
-using Nico.Assistant.Interface;
-using Nico.Assistant.Socket;
+using JOX.Assistant;
+using JOX.Assistant.Interface;
+using JOX.Assistant.Socket;
 using Package.Utilities.Net;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Web.Api.Base.Api;
@@ -49,7 +49,7 @@ namespace Api
             //Infrastructure DI
             services.AddInfrastructureDenpendencyInjection(Configuration);
 
-            //Configuración Controller:
+            //Configuraciï¿½n Controller:
             services.AddSingleton<SwaggerConfiguration>(SwaggerConfiguration);
 
             services.AddControllers()
@@ -64,9 +64,9 @@ namespace Api
             //services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Startup).Assembly));
             services.AddMediatrDependencyInjection();
 
-            //Aplication DI NICO
+            //Aplication DI JOX
             services.AddTransient<IProcessOperation, ProcessOperation>();
-            services.AddNicoDenpendencyInjection(Configuration);
+            services.AddJOXDependencyInjection(Configuration);
             services.AddSignalR();
         }
 
@@ -107,7 +107,7 @@ namespace Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<ChatHubNico>("/helpdesk");
+                endpoints.MapHub<ChatHubJOX>("/helpdesk");
             });
 
             app.UseResponseCompression();
